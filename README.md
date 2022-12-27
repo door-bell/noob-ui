@@ -1,9 +1,18 @@
-# Fabric Example Mod
+# NoobUi
 
-## Setup
+Some basic UI enhancements to help new players with basic minecraft concepts which are otherwise bespoke (hidden in debug menus, etc).
 
+## Feature List
+1. Coordinates, ping and FPS in the top left corner of the screen at all times.
+2. Holding TAB higlights visible nametags to make it easier to find nearby players (i.e. when you get lost in the forest or a cave).
+
+## Dev Setup
 For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
 
 ## License
+This mod is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Acknowledgements
+The following are acknowledgements of other projects from where I drew inspirations and examples for how to implement this mod.
+* Used as sample for mixing for name tag rendering: [DevPieter's Better-name-tags](https://github.com/DevPieter/Better-Name-Tags/blob/master/src/main/java/nl/devpieter/betternametags/mixin/EntityRendererMixin.java#L43)
+* Used as sample for drawing text from the HUD: [johnvictorfs's simple-utilities-mod](https://github.com/johnvictorfs/simple-utilities-mod)
