@@ -10,13 +10,13 @@ public class HudDataHelper implements IGameDataHelper {
 
     @Override
     public int getLatency() {
-        if (minecraftClient.player == null
-            || minecraftClient.getNetworkHandler() == null) {
+        if (minecraftClient.player == null || minecraftClient.getNetworkHandler() == null) {
             return 0;
         }
         // Player is guaranteed to be in the player list?
         //noinspection DataFlowIssue
-        return minecraftClient.getNetworkHandler()
+        return minecraftClient
+                .getNetworkHandler()
                 .getPlayerListEntry(minecraftClient.player.getUuid())
                 .getLatency();
     }

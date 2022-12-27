@@ -1,6 +1,7 @@
 package me.timbeck.mc.noobui.hud;
 
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.network.ServerInfo;
 import net.minecraft.client.util.math.MatrixStack;
 
 public class NoobHud {
@@ -17,6 +18,9 @@ public class NoobHud {
     public void draw(MatrixStack matrixStack) {
         hudRenderer.setMatrixStack(matrixStack);
         hudRenderer.drawCoordinates(dataHelper.getPosition());
-        hudRenderer.drawLatency(dataHelper.getLatency());
+        ServerInfo serverInfo = minecraftClient.getNetworkHandler().getServerInfo();
+        if (serverInfo != null && !serverInfo.isLocal()) {
+            hudRenderer.drawLatency(dataHelper.getLatency());
+        }
     }
 }

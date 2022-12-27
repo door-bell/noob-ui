@@ -5,7 +5,6 @@ import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.BlockPos;
 
-
 public class HudRenderer implements IHudRenderer {
     private MatrixStack matrixStack;
     private final TextRenderer textRenderer;
@@ -22,11 +21,7 @@ public class HudRenderer implements IHudRenderer {
     @Override
     public void drawLatency(int latency) {
         this.textRenderer.drawWithShadow(
-                this.matrixStack,
-                String.format("%dms", latency),
-                1,
-                1,
-                16777215);
+                this.matrixStack, String.format("%dms", latency), 1, 1 + getLineHeight(), 16777215);
     }
 
     @Override
@@ -35,7 +30,7 @@ public class HudRenderer implements IHudRenderer {
                 this.matrixStack,
                 String.format("(%d, %d, %d)", position.getX(), position.getY(), position.getZ()),
                 1,
-                1 + getLineHeight(),
+                1,
                 16777215);
     }
 
