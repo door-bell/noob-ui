@@ -5,16 +5,18 @@ import net.minecraft.client.util.math.MatrixStack;
 
 public class NoobHud {
     private final MinecraftClient minecraftClient;
-    private final HudRenderer hudRenderer;
-    private final HudDataHelper dataHelper;
+    private final IHudRenderer hudRenderer;
+    private final IGameDataHelper dataHelper;
 
     public NoobHud(MinecraftClient minecraftClient) {
         this.minecraftClient = minecraftClient;
-        this.hudRenderer = new HudRenderer();
+        this.hudRenderer = new HudRenderer(minecraftClient);
         this.dataHelper = new HudDataHelper(minecraftClient);
     }
 
     public void draw(MatrixStack matrixStack) {
-
+        hudRenderer.setMatrixStack(matrixStack);
+        hudRenderer.drawCoordinates(dataHelper.getPosition());
+        hudRenderer.drawLatency(dataHelper.getLatency());
     }
 }

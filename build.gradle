@@ -19,6 +19,7 @@ repositories {
 }
 
 dependencies {
+
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
@@ -30,7 +31,6 @@ dependencies {
 	// Lombok
 	compileOnly "org.projectlombok:lombok:${project.lombok_version}"
 	annotationProcessor "org.projectlombok:lombok:${project.lombok_version}"
-
 	testCompileOnly "org.projectlombok:lombok:${project.lombok_version}"
 	testAnnotationProcessor "org.projectlombok:lombok:${project.lombok_version}"
 }
