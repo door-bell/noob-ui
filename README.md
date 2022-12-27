@@ -4,7 +4,7 @@ Some basic UI enhancements to help new players with basic minecraft concepts whi
 
 ## Feature List
 1. Coordinates, ping and FPS in the top left corner of the screen at all times.
-2. Holding TAB higlights visible nametags to make it easier to find nearby players (i.e. when you get lost in the forest or a cave).
+2. Holding TAB highlights visible player and horse names to make it easier to find them when they are nearby (i.e. when you lose track of your friend in a cave).
 
 ## Dev Setup
 For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
