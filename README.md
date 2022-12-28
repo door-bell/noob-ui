@@ -1,4 +1,8 @@
 # NoobUi
+
+[![build](https://github.com/door-bell/noob-ui/actions/workflows/build.yml/badge.svg)](https://github.com/door-bell/noob-ui/actions/workflows/build.yml)
+[![release](https://github.com/door-bell/noob-ui/actions/workflows/release.yml/badge.svg)](https://github.com/door-bell/noob-ui/actions/workflows/release.yml)
+
 A minecraft fabric mod that adds some basic UI enhancements to help new players with basic minecraft concepts which are otherwise bespoke (hidden in debug menus, etc).
 
 ## Feature List
