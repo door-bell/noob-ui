@@ -6,4 +6,6 @@ public interface IGameDataHelper {
     int getLatency();
 
     BlockPos getPosition();
+
+    String getCompass();
 }

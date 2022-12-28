@@ -18,6 +18,7 @@ public class NoobHud {
     public void draw(MatrixStack matrixStack) {
         hudRenderer.setMatrixStack(matrixStack);
         hudRenderer.drawCoordinates(dataHelper.getPosition());
+        hudRenderer.drawCompass(dataHelper.getCompass());
         ServerInfo serverInfo = minecraftClient.getNetworkHandler().getServerInfo();
         if (serverInfo != null && !serverInfo.isLocal()) {
             hudRenderer.drawLatency(dataHelper.getLatency());

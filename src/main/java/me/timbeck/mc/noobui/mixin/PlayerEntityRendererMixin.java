@@ -6,7 +6,6 @@ import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.passive.HorseEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.Text;
 import org.joml.Matrix4f;
@@ -29,8 +28,7 @@ public class PlayerEntityRendererMixin<T extends Entity> {
             int light,
             CallbackInfo ci) {
         boolean nameListKeyIsPressed = KeybindStateRepository.getInstance().isNameTagKeyPressed();
-        if ((entity instanceof HorseEntity || entity instanceof PlayerEntity)
-                && nameListKeyIsPressed) {
+        if (entity instanceof PlayerEntity && nameListKeyIsPressed) {
             double distanceToCamera =
                     mc.getEntityRenderDispatcher().getSquaredDistanceToCamera(entity);
             if (distanceToCamera > 4096.0D || entity.isSneaky()) {

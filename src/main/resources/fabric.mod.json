@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "noobui",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "NoobUi",
+  "description": "Basic HUD / UI Enhancements targeting new players.",
   "authors": [
-    "Me!"
+    "door-bell"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/door-bell/noob-ui",
+    "sources": "https://github.com/door-bell/noob-ui"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/noobui/icon.jpeg",
 
   "environment": "*",
   "entrypoints": {
@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "noobui.mixins.json"
   ],
 
   "depends": {
@@ -32,7 +32,5 @@
     "minecraft": "~1.19.3",
     "java": ">=17"
   },
-  "suggests": {
-    "another-mod": "*"
-  }
+  "suggests": {}
 }

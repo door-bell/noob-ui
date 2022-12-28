@@ -13,7 +13,7 @@ public class NoobUi implements ModInitializer {
     // This logger is used to write text to the console and the log file.
     // It is considered best practice to use your mod id as the logger's name.
     // That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOG = LoggerFactory.getLogger("modid");
+    public static final Logger LOG = LoggerFactory.getLogger("noobui");
 
     @Override
     public void onInitialize() {
@@ -25,7 +25,7 @@ public class NoobUi implements ModInitializer {
                         new KeyBinding(
                                 "key.noobui.nametaghelp",
                                 InputUtil.Type.KEYSYM,
-                                GLFW.GLFW_KEY_TAB,
+                                GLFW.GLFW_KEY_M,
                                 "category.noobui.nametag"));
         ClientTickEvents.END_CLIENT_TICK.register(
                 client -> {

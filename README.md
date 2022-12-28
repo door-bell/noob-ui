@@ -1,10 +1,9 @@
 # NoobUi
-
-Some basic UI enhancements to help new players with basic minecraft concepts which are otherwise bespoke (hidden in debug menus, etc).
+A minecraft fabric mod that adds some basic UI enhancements to help new players with basic minecraft concepts which are otherwise bespoke (hidden in debug menus, etc).
 
 ## Feature List
-1. Coordinates, ping and FPS in the top left corner of the screen at all times.
-2. Holding TAB highlights visible player and horse names to make it easier to find them when they are nearby (i.e. when you lose track of your friend in a cave).
+1. Coordinates, compass and ping in the top left corner of the screen at all times.
+2. Holding M highlights visible player and horse names to make it easier to find them when they are nearby (i.e. when you lose track of your friend in a cave).
 
 ## Dev Setup
 For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.

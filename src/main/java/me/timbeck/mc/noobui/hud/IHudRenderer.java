@@ -9,4 +9,6 @@ public interface IHudRenderer {
     void drawLatency(int latency);
 
     void drawCoordinates(BlockPos position);
+
+    void drawCompass(String directionString);
 }

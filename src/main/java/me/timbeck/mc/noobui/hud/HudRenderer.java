@@ -21,7 +21,7 @@ public class HudRenderer implements IHudRenderer {
     @Override
     public void drawLatency(int latency) {
         this.textRenderer.drawWithShadow(
-                this.matrixStack, String.format("%dms", latency), 1, 1 + getLineHeight(), 16777215);
+                this.matrixStack, String.format("%dms", latency), 1, 1 + getLineHeight(), 0xFFFFFF);
     }
 
     @Override
@@ -29,9 +29,14 @@ public class HudRenderer implements IHudRenderer {
         this.textRenderer.drawWithShadow(
                 this.matrixStack,
                 String.format("(%d, %d, %d)", position.getX(), position.getY(), position.getZ()),
+                16,
                 1,
-                1,
-                16777215);
+                0xFFFFFF);
+    }
+
+    @Override
+    public void drawCompass(String directionString) {
+        this.textRenderer.drawWithShadow(this.matrixStack, directionString, 1, 1, 0xFFFFFF);
     }
 
     private int getLineHeight() {

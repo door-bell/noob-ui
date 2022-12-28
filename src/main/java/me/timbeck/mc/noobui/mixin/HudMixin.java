@@ -23,7 +23,7 @@ public class HudMixin {
                     "<init>(Lnet/minecraft/client/MinecraftClient;Lnet/minecraft/client/render/item/ItemRenderer;)V",
             at = @At(value = "RETURN"))
     protected void onInit(MinecraftClient client, ItemRenderer render, CallbackInfo ci) {
-        NoobUi.LOG.info("Initializing NoobUi");
+        NoobUi.LOG.info("Initializing NoobUi HUD");
         this.noobHud = new NoobHud(client);
     }
 
